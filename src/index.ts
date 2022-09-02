@@ -7,3 +7,12 @@ class Player {
         this.jersey = jersey;
     }
 };
+
+
+class BasketBallPlayer extends Player{
+    slamDunks:number;
+    constructor(name: string, jersey: number, slamDunks:number = 0){
+        super(name, jersey);
+        this.slamDunks = slamDunks;
+    }
+};
