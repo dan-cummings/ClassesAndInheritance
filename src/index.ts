@@ -26,4 +26,8 @@ class BaseBallPlayer extends Player {
     super(name, jersey);
     this.homeRuns = homeRuns;
   }
+
+  outOfPark(homebase:number) {
+    this.homeRuns += homebase;
+  }
 }
