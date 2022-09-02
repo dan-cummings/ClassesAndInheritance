@@ -16,3 +16,11 @@ class BasketBallPlayer extends Player{
         this.slamDunks = slamDunks;
     }
 };
+
+class BaseBallPlayer extends Player{
+    homeRuns:number;
+    constructor(name: string, jersey: number, homeRuns:number = 0){
+        super(name, jersey);
+        this.homeRuns = homeRuns;
+    }
+};
